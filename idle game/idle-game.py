@@ -55,7 +55,7 @@ TIER_NAMES_FLAT = [
     "TRAPPIST-1d", "TRAPPIST-1 System", "Pistol Star",
     "Betelgeuse", "Stephenson 2-18", "Orion Arm",
     "Milky Way", "Messier 87", "IC 1101",
-    "Local Group", "Local Supercluster", "Singularity",
+    "Local Group", "Laniakea Supercluster", "Singularity",
 ]
 
 # Group into pages (e.g., 24 per page)
