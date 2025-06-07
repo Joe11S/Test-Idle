@@ -172,12 +172,12 @@ class UpgradeButton:
 
         name_text = f"{self.name}"
         level_text = f"Lv {self.level}"
-        rps_text = f"${format_number(self.get_rps())}/s"
+        rps_text = f"${format_number(self.get_rps()) if self.level > 0 else format_number(self.rps_base*self.get_prestige_multiplier())}/s"
         cost_text = f"Cost: ${format_number(self.get_cost())}"
 
         screen.blit(font.render(name_text, True, BLACK), (self.rect.x + 5, self.rect.y + 3))
         screen.blit(font.render(level_text, True, BLACK), (self.rect.x + 5, self.rect.y + 25))
-        screen.blit(font.render(rps_text, True, BLACK), (self.rect.x + 185, self.rect.y + 3))
+        screen.blit(font.render(rps_text, True, BLACK), (self.rect.x + 175, self.rect.y + 3))
         screen.blit(font.render(cost_text, True, BLACK), (self.rect.x + 120, self.rect.y + 25))
 
     def handle_event(self, event, game, _):
@@ -216,7 +216,7 @@ class IdleGame:
         # --- Pygame setup ---
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         self.clock = pygame.time.Clock()
-        self.font = pygame.font.SysFont(None, 26)
+        self.font = pygame.font.SysFont(None, 22)
         self.big_font = pygame.font.SysFont(None, 36)
 
         # --- Core game variables ---
