@@ -333,9 +333,9 @@ class IdleGame:
         self.screen.blit(rps_text, (50, 70))
 
         # Prestige displays
-        points_text = self.font.render(f"Ascension Points: {format_number(self.prestige_points)}", True, BLACK)
-        prestige_mult_text = self.font.render(f"Ascension Power: x{format_number(self.prestige_multiplier)}", True, BLACK)
-        super_mult_text = self.font.render(f"Transcendent Power: x{format_number(self.super_multiplier)}", True, BLACK)
+        points_text = self.font.render(f"Ascension Points: {format_number(self.prestige_points)} Points", True, BLACK)
+        prestige_mult_text = self.font.render(f"Ascension Power: {format_number(self.prestige_multiplier)}x", True, BLACK)
+        super_mult_text = self.font.render(f"Transcendent Power: {format_number(self.super_multiplier)}TP", True, BLACK)
         self.screen.blit(points_text, (50, 85))
         self.screen.blit(prestige_mult_text, (50, 100))
         self.screen.blit(super_mult_text, (300, 70))
@@ -381,7 +381,7 @@ class IdleGame:
         pygame.draw.rect(self.screen, BLACK, self.prestige_button, 2)
         prestige_text = self.font.render("Ascend", True, BLACK)
         gain = self.calculate_prestige_gain() if self.can_prestige() else 0
-        hint_text = self.font.render(f"+{format_number(int(gain * self.super_multiplier))}", True, BLACK)
+        hint_text = self.font.render(f"+{format_number(int(gain * self.super_multiplier))} Points", True, BLACK)
         self.screen.blit(prestige_text, (self.prestige_button.x + 10, self.prestige_button.y + 5))
         self.screen.blit(hint_text, (self.prestige_button.x + 10, self.prestige_button.y + 22))
 
@@ -389,7 +389,7 @@ class IdleGame:
         pygame.draw.rect(self.screen, (150, 50, 150), self.super_prestige_button)
         pygame.draw.rect(self.screen, BLACK, self.super_prestige_button, 2)
         super_text = self.font.render("Transcend", True, BLACK)
-        super_hint = self.font.render(f"+{format_number(self.prestige_points * 0.001)}", True, BLACK)
+        super_hint = self.font.render(f"+{format_number(self.prestige_points * 0.001)}TP", True, BLACK)
         self.screen.blit(super_text, (self.super_prestige_button.x + 5, self.super_prestige_button.y + 5))
         self.screen.blit(super_hint, (self.super_prestige_button.x + 5, self.super_prestige_button.y + 22))
 
