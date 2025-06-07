@@ -53,7 +53,7 @@ TIER_NAMES_FLAT = [
     "A Cen System", "Sirius System", "55 Cancri e",
     "Solar Neighborhood", "Kepler 452b", "Kepler 22b",
     "TRAPPIST-1d", "TRAPPIST-1 System", "Pistol Star",
-    "Betelgeuse", "Stephenson-218", "Orion Arm",
+    "Betelgeuse", "Stephenson 2-18", "Orion Arm",
     "Milky Way", "Messier 87", "IC 1101",
     "Local Group", "Local Supercluster", "Singularity",
 ]
