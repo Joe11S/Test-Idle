@@ -58,6 +58,93 @@ TIER_NAMES_FLAT = [
     "Local Group", "Laniakea Supercluster", "Singularity",
 ]
 
+TOOLTIPS = {
+    "Bottle Cap": "Once lost beneath your couch cushions, now the seed of an empire. Every fortune starts somewhere.",
+    "Empty Glass Bottle": "The Bottle Cap is useless itself, unless it was integrated into this slightly more useful bottle. A symbol of potential, still empty, but its real value is what's inside it.",
+    "Toblerone Bar": "A tiny little mountain-shaped chocolate bar. Sweet and tasty. Humble in essence.",
+    "Coca-Cola Bottle": "The Bottle has finally found its purpose here. With sugar, fizz and branding, an iconic drink loved by fast-food lovers.",
+    "Breakfast Package": "Bacon and Eggs. The dynamic duo. Every household has them.",
+    "Stove": "This is where food is made, including the Breakfast Package you bought previously.",
+    "IPhone 15": "This tiny little thingamajig makes them addicted, scrolling for hours on end... and this accidentally gives you income out of addiction. Questionable, isn't it?",
+    "Toyota Camry": "A standard-body sedan to bring you everyday. Nothing special about it.",
+    "Steinway Grand Piano": "Now you're making a statement! This large instrument plays 'rich vibes' to the entire living room!",
+    "Simple Townhouse": "Real Estate has a very high income potential. You made your first move investing there. Tiny, but wait for its returns.",
+    "Supercar": "This powerful car doesn't just bring you anywhere fast. Its engine, top speed and bodywork commands attention and prestige. [Unlocks Luxuries Arc]",
+    "Small Private Island": "Why rent an apartment when you can own this chunk of land? Now you don't have to pay rent! The rent pays you!",
+    "Holiday House": "Rebekah Harkness sold this house to Taylor Swift and referenced it in 'The Last Great American Dynasty'. Later, you bought this house, and your real estate inflow skyrocketed.",
+    "Twitter": "This large social media network also happens to be one of the most notorious echo chambers — filtering out all other opinions to ensure that only what is seen as correct passes through.",
+    "Meta": "This Tech Titan owns both Instagram and Facebook. Known for Instagram and Facebook reels. A technological powerhouse that competes with Twitter.",
+    "Elon Musk": "Your dream has finally come to this moment — out-earning the richest person in the world. You out-earned so hard that you 'bought' him. Now he generates income for you.",
+    "Vatican": "However, your hunger for income becomes so insatiable that you proceeded to 'buy' countries now, and this tiny little country inside Rome is the first victim of your relentless pursuit. Now the church bends to your will. [Unlocks Power Arc]",
+    "France": "A country of beautiful fashion, really good food and of course, baguettes. Not the biggest country, but the richest in culture.",
+    "Russia": "The biggest country, and it's really cold — so cold that it thwarted invaders twice. Even though it is not the richest country today, it used to be the USSR, and that's why you invest on it.",
+    "US": "The richest country overall, has Fort Knox, New York and has the most advanced military and technology in the world. A global influence, it exerts power through its interventions. The other side of the Cold War, and way richer than the USSR.",
+    "Australia": "Filled with spiders, kangaroos and emus, this is your first continental acquisition yet.",
+    "Asia": "With this acquisition, you owned half of civilization itself. The biggest of all continents, this sets the stage of what would be your best acquisition yet.",
+    "Earth": "Your best acquisition yet. The Blue Marble and everything inside it, all yours.",
+    "Mars": "Musk dreamed of going to the Red Marble, and you didn't just take it, but made it earn for you. [Unlocks Solar Neighborhood Arc]",
+    "Inner Solar System": "Venus and Mercury joined your investment portfolio. At this point, you transcended Earth and are now acquiring planets.",
+    "Jupiter": "Jupiter is the largest planet in the Solar System... and it's now earning for you.",
+    "Outer Solar System": "Saturn, Uranus and Neptune joined your portfolio. Now you have all the planets within reach, earning for you.",
+    "Sun": "The very center of the solar system now earns for you. People dream of owning the stars, and you made it real... literally.",
+    "Heliosphere": "You now own everything inside the solar system — dwarf planets, asteroids, Kuiper Belt, and the Oort Cloud. Everything earns for you now.",
+    "Proxima Centauri": "Your investment portfolio now extends to stars too, and being the closest one, it becomes the first victim of your infinitely relentless acquisitions.",
+    "A Cen System": "Why own Proxima when you can own its entire system?",
+    "Sirius System": "The brightest star in the sky, that is slightly further out than A Cen, is white and hot, and also has a husk of a massive star, is yours now.",
+    "55 Cancri e": "This is an interesting exoplanet because it happens to be made of highly compressed carbon. And compressed carbon = DIAMONDS. Since this planet is diamonds, you want to make it earn for you — which is really immense if you think about it. [Unlocks Ascension]",
+    "Solar Neighborhood": "Every star within 100 light years of you, now yours to earn. [Unlocks Galactic Structures Arc]",
+    "Kepler 452b": "Earth 2.0. You decided to acquire 'Earth' again — this time, older, wiser, and orbiting a sun that's 1.5 billion years older.",
+    "Kepler 22b": "This is basically Earth Pro™. 2x the size of Earth, 4 times heavier, and yes, a lot more ocean.",
+    "TRAPPIST-1d": "Earth-sized exoplanet, part of a mini-solar-system. Although it is in the habitable zone, it is tidally locked — which means that daytime is a desert and nighttime is a frozen wasteland.",
+    "TRAPPIST-1 System": "Why own a single planet when you can own an entire solar system?",
+    "Pistol Star": "A stellar titan. Blue and bright.",
+    "Betelgeuse": "This iconic supergiant is visible as a red dot on the upper left shoulder of Orion. This star is a senior, being near the end of its life.",
+    "Stephenson 2-18": "This supergiant makes Betelgeuse look like a baseball. This beast is bigger than Saturn's orbit.",
+    "Orion Arm": "You now own a full segment of the Milky Way, your home galaxy. Every star in it, now earns for you.",
+    "Milky Way": "Why own a segment when you can own the ENTIRE galaxy? Now every single star and Sagittarius A now bows down to you.",
+    "Messier 87": "Your portfolio now extends to whole galaxies too, and Messier 87 is one of them... being the site of the first black hole pictured. [Unlocks Beyond Comprehension Arc]",
+    "IC 1101": "You acquire a titan of galaxies. Being a really large elliptical galaxy consisting of some of the Universe's oldest stars ever.",
+    "Local Group": "Every nearby galaxy: Andromeda, Triangulum, Large and Small Magellanic Clouds — all now earn for you.",
+    "Laniakea Supercluster": "Your home cluster of over 100,000 galaxies spanning 520 million light years. So unfathomably big that its paycheck is also unfathomable as well — and you now own it.",
+    "Singularity": "Everything in this universe... is now owned by you. You transcended everything below it, and don’t just own everything itself — you become economy itself. Good job. [Unlock it to finish the game!]"
+}
+
+TOOLTIPS["Ascend"] = (
+    "Resets your upgrades. Adds Ascension Points per upgrade level.\n"
+    "1 Ascension Point = +0.01x Ascension Power"
+)
+
+TOOLTIPS["Transcend"] = (
+    "Resets your upgrades, Ascension Points, and Ascension Power.\n"
+    "1 Ascension Point = +0.001TP"
+)
+
+NUMBER_FORMAT_TOOLTIP = (
+    "K = Thousand\n"
+    "M = Million\n"
+    "B = Billion\n"
+    "T = Trillion\n"
+    "q = Quadrillion\n"
+    "Q = Quintillion\n"
+    "s = Sextillion\n"
+    "S = Septillion\n"
+    "O = Octillion\n"
+    "N = Nonillion\n"
+    "d = Decillion\n"
+    "U = Undecillion\n"
+    "D = Duodecillion\n"
+    "! = Tredecillion\n"
+    "@ = Quattuordecillion\n"
+    "# = Quindecillion\n"
+    "$ = Sexdecillion\n"
+    "% = Septendecillion\n"
+    "^ = Octodecillion\n"
+    "& = Novemdecillion\n"
+    "* = Vigintillion\n"
+    "e+XX = Scientific Notation"
+)
+
+
 # Group into pages (e.g., 24 per page)
 def group_into_pages(flat_list, per_page=24):
     return [flat_list[i:i + per_page] for i in range(0, len(flat_list), per_page)]
@@ -118,6 +205,29 @@ def format_number(n):
     else:
         return f"{n:,.2f}"
 
+class FloatingText:
+    def __init__(self, x, y, text, color=(0, 100, 0)):
+        self.x = x
+        self.y = y
+        self.text = text
+        self.color = color
+        self.alpha = 255
+        self.lifetime = 1.0  # seconds
+        self.creation_time = time.time()
+
+    def update(self):
+        elapsed = time.time() - self.creation_time
+        if elapsed > self.lifetime:
+            return False
+        self.y -= 0.5  # Move upward slowly
+        self.alpha = max(0, 255 - int((elapsed / self.lifetime) * 255))
+        return True
+
+    def draw(self, screen, font):
+        surface = font.render(self.text, True, self.color)
+        surface.set_alpha(self.alpha)
+        screen.blit(surface, (self.x, self.y))
+
 class UpgradeButton:
     def __init__(self, x, y, width, height, index, rps_base, cost_base, name):
         self.rect = pygame.Rect(x, y, width, height)
@@ -160,16 +270,13 @@ class UpgradeButton:
     def draw(self, screen, font, resources, game):
         unlocked = self.is_unlocked(game)
         affordable = resources >= self.get_cost()
-        if not unlocked:
-            color = GRAY
-        elif affordable:
-            color = GREEN
-        else:
-            color = RED
+        mouse_hover = self.rect.collidepoint(pygame.mouse.get_pos())
 
+        color = GRAY if not unlocked else GREEN if affordable else RED
         pygame.draw.rect(screen, color, self.rect)
         pygame.draw.rect(screen, BLACK, self.rect, 2)
 
+        # Render basic info
         name_text = f"{self.name}"
         level_text = f"Lv {self.level}"
         rps_text = f"${format_number(self.get_rps()) if self.level > 0 else format_number(self.rps_base*self.get_prestige_multiplier())}/s"
@@ -179,6 +286,13 @@ class UpgradeButton:
         screen.blit(font.render(level_text, True, BLACK), (self.rect.x + 5, self.rect.y + 25))
         screen.blit(font.render(rps_text, True, BLACK), (self.rect.x + 175, self.rect.y + 3))
         screen.blit(font.render(cost_text, True, BLACK), (self.rect.x + 120, self.rect.y + 25))
+
+        # Draw tooltip if hovered
+        if mouse_hover:
+            tooltip = TOOLTIPS.get(self.name, "")
+            if tooltip:
+                self.draw_tooltip(screen, tooltip, font)
+
 
     def handle_event(self, event, game, _):
         if event.type == pygame.MOUSEBUTTONDOWN and self.rect.collidepoint(event.pos):
@@ -196,6 +310,33 @@ class UpgradeButton:
                             game.total_rps += (new_rps - prev_rps)
                         else:
                             break
+
+    def draw_tooltip(self, screen, text, font):
+        words = text.split()
+        lines = []
+        line = ""
+        for word in words:
+            if font.size(line + word)[0] < 300:
+                line += word + " "
+            else:
+                lines.append(line)
+                line = word + " "
+        lines.append(line)
+
+        width = 320
+        height = 20 + 20 * len(lines)
+        x, y = pygame.mouse.get_pos()
+        x = min(x + 10, SCREEN_WIDTH - width - 10)
+        y = min(y + 10, SCREEN_HEIGHT - height - 10)
+
+        tooltip_rect = pygame.Rect(x, y, width, height)
+        pygame.draw.rect(screen, (255, 255, 200), tooltip_rect)
+        pygame.draw.rect(screen, BLACK, tooltip_rect, 2)
+
+        for i, line in enumerate(lines):
+            rendered = font.render(line.strip(), True, BLACK)
+            screen.blit(rendered, (x + 5, y + 5 + i * 20))
+
 
 
 class IdleGame:
@@ -226,6 +367,8 @@ class IdleGame:
         self.total_rps = 0.0
         self.resource = 0.0
         self.last_update = time.time()
+        self.floating_texts = []
+        self.resource_info_rect = pygame.Rect(50, 30, 50, 20)
 
         # --- All upgrade buttons and the subset for the current page ---
         self.all_buttons = self.create_all_buttons()
@@ -234,8 +377,39 @@ class IdleGame:
         # --- Click area (bottom panel) ---
         self.click_rect = pygame.Rect(0, SCREEN_HEIGHT - 80, SCREEN_WIDTH, 80)
 
-        # --- Super Prestige button (next to prestige) ---
+        # --- Prestige buttons ---
+        self.prestige_button = pygame.Rect(SCREEN_WIDTH - 200, SCREEN_HEIGHT - 140, 160, 40)
         self.super_prestige_button = pygame.Rect(SCREEN_WIDTH - 380, SCREEN_HEIGHT - 190, 160, 40)
+
+        # --- Backgrounds ---
+
+        self.backgrounds = {
+            "default": pygame.image.load("piggy_bank.jpg").convert(),
+            "mansion": pygame.image.load("mansion.jpg").convert(),
+            "earth": pygame.image.load("earth.jpg").convert(),
+            "nebula": pygame.image.load("nebula.jpg").convert(),
+            "galaxy": pygame.image.load("galaxy.jpg").convert(),
+            "supercluster": pygame.image.load("supercluster.jpeg").convert(),
+            "black": pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT))
+        }
+        self.backgrounds["black"].fill((0, 0, 0))  # solid black
+
+        self.current_background = self.backgrounds["default"]
+        self.text_color = BLACK
+
+        # --- Arc Titles ---
+        
+        self.arc_titles = [
+            (0, "Personal Items"),
+            (10, "Luxuries"),
+            (16, "Power"),
+            (23, "Solar Neighborhood"),
+            (33, "Galactic Structures"),
+            (43, "Beyond Comprehension"),
+            (47, "The Singularity")
+        ]
+        self.current_arc_title = "Arc I: Personal Items"
+        self.arc_flash_time = 0
 
         # Load saved state (if any), including offline gain:
         self.load_game()
@@ -316,26 +490,85 @@ class IdleGame:
             button.level = 0
         self.total_rps = 0.0
         self.resource = 0.0
+    
+    def update_background(self):
+        previous_title = self.current_arc_title
+
+        if self.all_buttons[47].level > 0:
+            self.current_background = self.backgrounds["black"]
+            self.text_color = WHITE
+            self.current_arc_title = "Arc VII: The Singularity"
+        elif self.all_buttons[43].level > 0:
+            self.current_background = self.backgrounds["supercluster"]
+            self.text_color = WHITE
+            self.current_arc_title = "Arc VI: Beyond Comprehension"
+        elif self.all_buttons[33].level > 0:
+            self.current_background = self.backgrounds["galaxy"]
+            self.text_color = WHITE
+            self.current_arc_title = "Arc V: Galactic Structures"
+        elif self.all_buttons[23].level > 0:
+            self.current_background = self.backgrounds["nebula"]
+            self.text_color = WHITE
+            self.current_arc_title = "Arc IV: Solar Neighborhood"
+        elif self.all_buttons[16].level > 0:
+            self.current_background = self.backgrounds["earth"]
+            self.text_color = WHITE
+            self.current_arc_title = "Arc III: Power"
+        elif self.all_buttons[10].level > 0:
+            self.current_background = self.backgrounds["mansion"]
+            self.text_color = BLACK
+            self.current_arc_title = "Arc II: Luxuries"
+        else:
+            self.current_background = self.backgrounds["default"]
+            self.text_color = BLACK
+            self.current_arc_title = "Arc I: Personal Items"
+
+        # Trigger arc title flash on change
+        if self.current_arc_title != previous_title:
+            self.arc_flash_time = time.time()
+
+
 
     def update(self):
         current_time = time.time()
         elapsed = current_time - self.last_update
         self.resource += self.total_rps * elapsed
         self.last_update = current_time
+        # Remove expired texts
+        self.floating_texts = [ft for ft in self.floating_texts if ft.update()]
+        self.update_background()
+
+    def draw_multiline_tooltip(self, screen, text, font, color):
+        lines = text.split("\n")
+        width = 220
+        height = 20 + 20 * len(lines)
+        x, y = pygame.mouse.get_pos()
+        x = min(x + 10, SCREEN_WIDTH - width - 10)
+        y = min(y + 10, SCREEN_HEIGHT - height - 10)
+
+        tooltip_rect = pygame.Rect(x, y, width, height)
+        pygame.draw.rect(screen, (255, 255, 200), tooltip_rect)
+        pygame.draw.rect(screen, BLACK, tooltip_rect, 2)
+
+        for i, line in enumerate(lines):
+            rendered = font.render(line.strip(), True, color)
+            screen.blit(rendered, (x + 5, y + 5 + i * 20))
 
     def draw(self):
-        self.screen.fill(WHITE)
+        self.screen.blit(pygame.transform.scale(self.current_background, (SCREEN_WIDTH, SCREEN_HEIGHT)), (0, 0))
+        self.hovered_button = None
+        mouse_pos = pygame.mouse.get_pos()
 
         # Resource display
-        res_text = self.big_font.render(f"${format_number(self.resource)}", True, BLACK)
-        rps_text = self.font.render(f"${format_number(self.get_total_rps())}/s", True, BLACK)
+        res_text = self.big_font.render(f"${format_number(self.resource)}", True, self.text_color)
+        rps_text = self.font.render(f"${format_number(self.get_total_rps())}/s", True, self.text_color)
         self.screen.blit(res_text, (50, 30))
         self.screen.blit(rps_text, (50, 70))
 
         # Prestige displays
-        points_text = self.font.render(f"Ascension Points: {format_number(self.prestige_points)} Points", True, BLACK)
-        prestige_mult_text = self.font.render(f"Ascension Power: {format_number(self.prestige_multiplier)}x", True, BLACK)
-        super_mult_text = self.font.render(f"Transcendent Power: {format_number(self.super_multiplier)}TP", True, BLACK)
+        points_text = self.font.render(f"Ascension Points: {format_number(self.prestige_points)} Points", True, self.text_color)
+        prestige_mult_text = self.font.render(f"Ascension Power: {format_number(self.prestige_multiplier)}x", True, self.text_color)
+        super_mult_text = self.font.render(f"Transcendent Power: {format_number(self.super_multiplier)}TP", True, self.text_color)
         self.screen.blit(points_text, (50, 85))
         self.screen.blit(prestige_mult_text, (50, 100))
         self.screen.blit(super_mult_text, (300, 70))
@@ -348,7 +581,7 @@ class IdleGame:
 
         next_text = self.font.render("Next Page", True, BLACK)
         prev_text = self.font.render("Prev Page", True, BLACK)
-        page_text = self.font.render(f"Page {self.current_page + 1}/{self.total_pages}", True, BLACK)
+        page_text = self.font.render(f"Page {self.current_page + 1}/{self.total_pages}", True, self.text_color)
 
         self.screen.blit(next_text, (self.next_button.x + 10, self.next_button.y + 10))
         self.screen.blit(prev_text, (self.prev_button.x + 10, self.prev_button.y + 10))
@@ -357,6 +590,14 @@ class IdleGame:
         # Draw upgrade buttons
         for button in self.buttons:
             button.draw(self.screen, self.font, self.resource, self)
+            if button.rect.collidepoint(pygame.mouse.get_pos()):
+                self.hovered_button = button
+            # Check if hovering over Ascend or Transcend buttons
+            if self.prestige_button.collidepoint(mouse_pos):
+                self.hovered_button = "Ascend"
+            elif self.super_prestige_button.collidepoint(mouse_pos):
+                self.hovered_button = "Transcend"
+                
 
         # Draw click panel
         pygame.draw.rect(self.screen, (200, 230, 255), self.click_rect)
@@ -376,7 +617,6 @@ class IdleGame:
         self.screen.blit(click_info, info_rect)
 
         # Prestige button
-        self.prestige_button = pygame.Rect(SCREEN_WIDTH - 200, SCREEN_HEIGHT - 140, 160, 40)
         pygame.draw.rect(self.screen, RED, self.prestige_button)
         pygame.draw.rect(self.screen, BLACK, self.prestige_button, 2)
         prestige_text = self.font.render("Ascend", True, BLACK)
@@ -399,13 +639,51 @@ class IdleGame:
         mult_text = self.font.render(f"Buy x{self.get_purchase_multiplier()}", True, BLACK)
         self.screen.blit(mult_text, (self.multiplier_button.x + 25, self.multiplier_button.y + 8))
 
+        if isinstance(self.hovered_button, UpgradeButton):
+            tooltip = TOOLTIPS.get(self.hovered_button.name, "")
+            if tooltip:
+                self.hovered_button.draw_tooltip(self.screen, tooltip, self.font)
+        elif isinstance(self.hovered_button, str):
+            tooltip = TOOLTIPS.get(self.hovered_button, "")
+            if tooltip:
+                # Use a temporary dummy UpgradeButton to draw the tooltip
+                dummy_button = UpgradeButton(0, 0, 0, 0, -1, 0, 0, self.hovered_button)
+                dummy_button.draw_tooltip(self.screen, tooltip, self.font)
+
+        for ft in self.floating_texts:
+            ft.draw(self.screen, self.font)
+
+        # Draw arc title if recently changed
+        if time.time() - self.arc_flash_time < 3:  # display for 3 seconds
+            alpha = 255
+            elapsed = time.time() - self.arc_flash_time
+            if elapsed > 2.5:
+                alpha = int(255 * (1 - (elapsed - 2.5) / 0.5))  # fade out last 0.5s
+
+            arc_surface = self.big_font.render(self.current_arc_title, True, self.text_color)
+            arc_surface.set_alpha(alpha)
+            arc_rect = arc_surface.get_rect(center=(SCREEN_WIDTH // 2, 100))
+            self.screen.blit(arc_surface, arc_rect)
+
+        if self.resource_info_rect.collidepoint(pygame.mouse.get_pos()):
+            self.draw_multiline_tooltip(self.screen, NUMBER_FORMAT_TOOLTIP, self.font, self.text_color)
+
+
         pygame.display.flip()
 
     def handle_click(self):
         click_value = 0.01
         if self.all_buttons[0].level > 0:
             click_value += self.get_total_rps() * 0.1
+
         self.resource += click_value
+
+        # Create visual feedback text
+        self.floating_texts.append(FloatingText(
+            SCREEN_WIDTH // 2 - 20,
+            SCREEN_HEIGHT - 90,
+            f"+${format_number(click_value)}"
+        ))
 
     # —————— JSON SAVE/LOAD WITH OFFLINE GAIN ——————
 
