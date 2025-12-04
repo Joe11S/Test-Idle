@@ -71,9 +71,9 @@ TOOLTIPS = {
     "Simple Townhouse": "Real Estate has a very high income potential. You made your first move investing there. Tiny, but wait for its returns.",
     "Supercar": "This powerful car doesn't just bring you anywhere fast. Its engine, top speed and bodywork commands attention and prestige. [Unlocks Luxuries Arc]",
     "Small Private Island": "Why rent an apartment when you can own this chunk of land? Now you don't have to pay rent! The rent pays you!",
-    "Holiday House": "Rebekah Harkness sold this house to Taylor Swift and referenced it in 'The Last Great American Dynasty'. Later, you bought this house, and your real estate inflow skyrocketed.",
+    "Holiday House": "Rebekah Harkness once owned this house. Taylor Swift purchased it and referenced it in 'The Last Great American Dynasty'. Later, you bought this house, and your real estate inflow skyrocketed.",
     "Twitter": "This large social media network also happens to be one of the most notorious echo chambers — filtering out all other opinions to ensure that only what is seen as correct passes through.",
-    "Meta": "This Tech Titan owns both Instagram and Facebook. Known for Instagram and Facebook reels. A technological powerhouse that competes with Twitter.",
+    "Meta": "This Tech Titan owns both doomscrolling Instagram reels and your mom’s Minion memes. Known for Instagram and Facebook reels. A technological powerhouse that competes with Twitter.",
     "Elon Musk": "Your dream has finally come to this moment — out-earning the richest person in the world. You out-earned so hard that you 'bought' him. Now he generates income for you.",
     "Vatican": "However, your hunger for income becomes so insatiable that you proceeded to 'buy' countries now, and this tiny little country inside Rome is the first victim of your relentless pursuit. Now the church bends to your will. [Unlocks Power Arc]",
     "France": "A country of beautiful fashion, really good food and of course, baguettes. Not the biggest country, but the richest in culture.",
@@ -120,27 +120,26 @@ TOOLTIPS["Transcend"] = (
 )
 
 NUMBER_FORMAT_TOOLTIP = (
-    "K = Thousand\n"
     "M = Million\n"
     "B = Billion\n"
     "T = Trillion\n"
-    "q = Quadrillion\n"
-    "Q = Quintillion\n"
-    "s = Sextillion\n"
-    "S = Septillion\n"
-    "O = Octillion\n"
-    "N = Nonillion\n"
-    "d = Decillion\n"
-    "U = Undecillion\n"
-    "D = Duodecillion\n"
-    "! = Tredecillion\n"
-    "@ = Quattuordecillion\n"
-    "# = Quindecillion\n"
-    "$ = Sexdecillion\n"
-    "% = Septendecillion\n"
-    "^ = Octodecillion\n"
-    "& = Novemdecillion\n"
-    "* = Vigintillion\n"
+    "Qa = Quadrillion\n"
+    "Qi = Quintillion\n"
+    "Sx = Sextillion\n"
+    "Sp = Septillion\n"
+    "Oc = Octillion\n"
+    "No = Nonillion\n"
+    "Dc = Decillion\n"
+    "Ud = Undecillion\n"
+    "Dd = Duodecillion\n"
+    "Td = Tredecillion\n"
+    "Qad = Quattuordecillion\n"
+    "Qid = Quindecillion\n"
+    "Sxd = Sexdecillion\n"
+    "Spd = Septendecillion\n"
+    "Ocd = Octodecillion\n"
+    "Nod = Novemdecillion\n"
+    "Vi = Vigintillion\n"
     "e+XX = Scientific Notation"
 )
 
@@ -156,50 +155,48 @@ TIER_NAMES = group_into_pages(TIER_NAMES_FLAT)
 # Format large numbers
 
 def format_number(n):
-    if n >= 1e68:
+    if n >= 1e66:
         return f"{n:.3e}"
-    elif n >= 1e65:
-        return f"{n/1e63:,.0f}*"
-    elif n >= 1e62:
-        return f"{n/1e60:,.0f}&"
-    elif n >= 1e59:
-        return f"{n/1e57:,.0f}^"
-    elif n >= 1e56:
-        return f"{n/1e54:,.0f}%"
-    elif n >= 1e53:
-        return f"{n/1e51:,.0f}$"
-    elif n >= 1e50:
-        return f"{n/1e48:,.0f}#"
-    elif n >= 1e47:
-        return f"{n/1e45:,.0f}@"
-    elif n >= 1e44:
-        return f"{n/1e42:,.0f}!"
-    elif n >= 1e41:
-        return f"{n/1e39:,.0f}D"
-    elif n >= 1e38:
-        return f"{n/1e36:,.0f}U"
-    elif n >= 1e35:
-        return f"{n/1e33:,.0f}d"
-    elif n >= 1e32:
-        return f"{n/1e30:,.0f}N"
-    elif n >= 1e29:
-        return f"{n/1e27:,.0f}O"
-    elif n >= 1e26:
-        return f"{n/1e24:,.0f}S"
-    elif n >= 1e23:
-        return f"{n/1e21:,.0f}s"
-    elif n >= 1e20:
-        return f"{n/1e18:,.0f}Q"
-    elif n >= 1e17:
-        return f"{n/1e15:,.0f}q"
-    elif n >= 1e14:
-        return f"{n/1e12:,.0f}T"
-    elif n >= 1e11:
-        return f"{n/1e9:,.0f}B"
-    elif n >= 1e8:
-        return f"{n/1e6:,.0f}M"
-    elif n >= 1e5:
-        return f"{n/1e3:,.0f}K"
+    elif n >= 1e63:
+        return f"{n/1e63:.2f}Vi"
+    elif n >= 1e60:
+        return f"{n/1e60:.2f}Nod"
+    elif n >= 1e57:
+        return f"{n/1e57:.2f}Ocd"
+    elif n >= 1e54:
+        return f"{n/1e54:.2f}Spd"
+    elif n >= 1e51:
+        return f"{n/1e51:.2f}Sxd"
+    elif n >= 1e48:
+        return f"{n/1e48:.2f}Qid"
+    elif n >= 1e45:
+        return f"{n/1e45:.2f}Qad"
+    elif n >= 1e42:
+        return f"{n/1e42:.2f}Td"
+    elif n >= 1e39:
+        return f"{n/1e39:.2f}Dd"
+    elif n >= 1e36:
+        return f"{n/1e36:.2f}Ud"
+    elif n >= 1e33:
+        return f"{n/1e33:.2f}Dc"
+    elif n >= 1e30:
+        return f"{n/1e30:.2f}No"
+    elif n >= 1e27:
+        return f"{n/1e27:.2f}Oc"
+    elif n >= 1e24:
+        return f"{n/1e24:.2f}Sp"
+    elif n >= 1e21:
+        return f"{n/1e21:.2f}Sx"
+    elif n >= 1e18:
+        return f"{n/1e18:.2f}Qi"
+    elif n >= 1e15:
+        return f"{n/1e15:.2f}Qa"
+    elif n >= 1e12:
+        return f"{n/1e12:.2f}T"
+    elif n >= 1e9:
+        return f"{n/1e9:.2f}B"
+    elif n >= 1e6:
+        return f"{n/1e6:.2f}M"
     elif n >= 1e2:
         return f"{n:,.0f}"
     else:
@@ -367,8 +364,10 @@ class IdleGame:
         self.total_rps = 0.0
         self.resource = 0.0
         self.last_update = time.time()
+        self.total_ascensions_this_transcendence = 0
+        self.total_transcendences = 0
         self.floating_texts = []
-        self.resource_info_rect = pygame.Rect(50, 30, 50, 20)
+        self.resource_info_rect = pygame.Rect(50, 30, 150, 20)
 
         # --- All upgrade buttons and the subset for the current page ---
         self.all_buttons = self.create_all_buttons()
@@ -384,12 +383,12 @@ class IdleGame:
         # --- Backgrounds ---
 
         self.backgrounds = {
-            "default": pygame.image.load("piggy_bank.jpg").convert(),
-            "mansion": pygame.image.load("mansion.jpg").convert(),
-            "earth": pygame.image.load("earth.jpg").convert(),
-            "nebula": pygame.image.load("nebula.jpg").convert(),
-            "galaxy": pygame.image.load("galaxy.jpg").convert(),
-            "supercluster": pygame.image.load("supercluster.jpeg").convert(),
+            "default": pygame.image.load("piggy_bank.png").convert(),
+            "mansion": pygame.image.load("mansion.png").convert(),
+            "earth": pygame.image.load("earth.png").convert(),
+            "nebula": pygame.image.load("nebula.png").convert(),
+            "galaxy": pygame.image.load("galaxy.png").convert(),
+            "supercluster": pygame.image.load("supercluster.png").convert(),
             "black": pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT))
         }
         self.backgrounds["black"].fill((0, 0, 0))  # solid black
@@ -471,6 +470,8 @@ class IdleGame:
         self.total_rps = 0.0
         self.resource = 0.0
 
+        self.total_ascensions_this_transcendence += 1
+
     def can_super_prestige(self):
         # Can only super prestige if the player has at least 1 prestige point
         return self.prestige_points >= 1
@@ -490,6 +491,10 @@ class IdleGame:
             button.level = 0
         self.total_rps = 0.0
         self.resource = 0.0
+
+        self.total_transcendences += 1
+        self.total_ascensions_this_transcendence = 0  # reset ascensions for the new cycle
+
     
     def update_background(self):
         previous_title = self.current_arc_title
@@ -526,8 +531,6 @@ class IdleGame:
         # Trigger arc title flash on change
         if self.current_arc_title != previous_title:
             self.arc_flash_time = time.time()
-
-
 
     def update(self):
         current_time = time.time()
@@ -572,6 +575,15 @@ class IdleGame:
         self.screen.blit(points_text, (50, 85))
         self.screen.blit(prestige_mult_text, (50, 100))
         self.screen.blit(super_mult_text, (300, 70))
+        ascension_stat_text = self.font.render(
+            f"Ascensions this Transcendence: {self.total_ascensions_this_transcendence}", True, self.text_color
+        )
+        self.screen.blit(ascension_stat_text, (300, 85))
+
+        transcendence_stat_text = self.font.render(
+            f"Total Transcendences: {self.total_transcendences}", True, self.text_color
+        )
+        self.screen.blit(transcendence_stat_text, (300, 100))
 
         # Page navigation UI
         pygame.draw.rect(self.screen, GRAY, self.next_button)
@@ -666,7 +678,7 @@ class IdleGame:
             self.screen.blit(arc_surface, arc_rect)
 
         if self.resource_info_rect.collidepoint(pygame.mouse.get_pos()):
-            self.draw_multiline_tooltip(self.screen, NUMBER_FORMAT_TOOLTIP, self.font, self.text_color)
+            self.draw_multiline_tooltip(self.screen, NUMBER_FORMAT_TOOLTIP, self.font, BLACK)
 
 
         pygame.display.flip()
@@ -710,7 +722,9 @@ class IdleGame:
             "current_multiplier_index": self.current_multiplier_index,
             "current_page": self.current_page,
             "button_levels": [button.level for button in self.all_buttons],
-            "save_time": time.time()
+            "save_time": time.time(),
+            "total_ascensions_this_transcendence": self.total_ascensions_this_transcendence,
+            "total_transcendences": self.total_transcendences,
         }
         try:
             with open(filename, "w") as f:
@@ -752,6 +766,8 @@ class IdleGame:
         saved_page = data.get("current_page", 0)
         saved_levels = data.get("button_levels", [])
         saved_time = data.get("save_time", time.time())
+        saved_total_ascensions_this_transcendence = data.get("total_ascensions_this_transcendence", 0)
+        saved_total_transcendences = data.get("total_transcendences", 0)
 
         # 2) Compute offline gain
         now = time.time()
@@ -772,6 +788,8 @@ class IdleGame:
         self.super_multiplier = saved_super_multiplier
         self.current_multiplier_index = saved_multiplier_index
         self.current_page = saved_page
+        self.total_ascensions_this_transcendence = saved_total_ascensions_this_transcendence
+        self.total_transcendences = saved_total_transcendences
 
         # 4) Restore button levels if they match
         if len(saved_levels) == len(self.all_buttons):
